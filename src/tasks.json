@@ -1,0 +1,58 @@
+{
+    "layout": [
+        ["Main", "Work"],
+        ["Home", "Code"]
+    ],
+    
+    "groups": {
+        "Main": [
+            [1, 2]
+        ],
+        "Work": [
+            [3, 4]
+        ],
+        "Home": [
+            [5]
+        ], 
+        "Code": [
+            []
+        ]        
+    },
+    
+    "settings": {
+        "mainLayoutName": "mainLayout"
+    },
+    
+    "tasks": {
+        1:{          
+            "type": "start",
+            "name": "Open tasks.json",
+            "group":"Main",
+            "path": "C:/tasks.json"    
+        },
+        2:{          
+            "type": "explorer",
+            "name": "Folder",
+            "group":"Main",
+            "path": "C:/myfolder"    
+        },
+        3:{
+            "type": "cmd",
+            "name": "Command Line",
+            "group":"Work",            
+            "path": "dir C:"    
+        },
+        4:{
+            "type": "py",
+            "name": "Python",
+            "group":"Work",
+            "path": "test.py"    
+        },
+        5:{
+            "type": "bat",            
+            "name": "Start web server",
+            "group":"Home",
+            "path": "C:/startserver.bat"
+        }         
+    }      
+}
